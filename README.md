@@ -2,6 +2,7 @@
 
 # 1. Student Info
 Name:      Cheang Shy Yah
+
 Matric No: 252823
 
 # 2. Introduction
@@ -18,6 +19,10 @@ Thread-4: Calculate the number of courses from SOC
 Thread-5: Display the information of STIW3054 (Bil, Code, Course, date and time).
 
 # 3. Output
+
+![output1](https://user-images.githubusercontent.com/47626271/55498013-2b5a2080-5675-11e9-9ddc-5ff8372589df.PNG)
+
+![output2](https://user-images.githubusercontent.com/47626271/55498015-2bf2b700-5675-11e9-9792-38aa974951e8.PNG)
 
 # 4. UML Class Diagram
 
