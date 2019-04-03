@@ -7,9 +7,10 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
 import org.apache.pdfbox.util.PDFTextStripperByArea;
 
-public class Thread_5 extends MultiThread implements Runnable {
+public class Thread_1 extends MultiThread implements Runnable {
 	
 	public void run() {
+		int course = 0;
 		try (PDDocument pdf = PDDocument.load(new File("A182 Draft Stud.pdf"))) {
 			pdf.getClass();
 			if (!pdf.isEncrypted()) {
@@ -20,16 +21,13 @@ public class Thread_5 extends MultiThread implements Runnable {
 				
 				//load all lines into a string
 				String pdfFileInText = pdfTextStripper.getText(pdf);
-           
-				//split by detecting newline
-				String lines[] = pdfFileInText.split("\\r?\\n");
-
-				System.out.println("\nDisplay the information of STIW3054 :");
-				for (String line : lines) {
-					if (line.contains("STIW3054")) {
-						System.out.print(" " + line);
+				
+				for(int i = 1; i <= pdfFileInText.length(); i++) {
+					if (pdfFileInText.contains(i + ".")) {
+						course = course + 1;
 					}
 				}
+				System.out.println("Total number of course are " + course);
 			}
 		} catch (IOException e) {
 			System.out.println("FAILED.\n[" + e.getMessage() + "]\n");

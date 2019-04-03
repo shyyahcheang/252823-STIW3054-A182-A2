@@ -7,7 +7,7 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
 import org.apache.pdfbox.util.PDFTextStripperByArea;
 
-public class Thread_4 implements Runnable {
+public class Thread_4 extends MultiThread implements Runnable {
 	
 	public void run() {
 		int socCourse = 0;

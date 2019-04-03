@@ -7,7 +7,7 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
 import org.apache.pdfbox.util.PDFTextStripperByArea;
 
-public class Thread_3 implements Runnable {
+public class Thread_3 extends MultiThread implements Runnable {
 	
 	public void run() {
 		try (PDDocument pdf = PDDocument.load(new File("A182 Draft Stud.pdf"))) {
